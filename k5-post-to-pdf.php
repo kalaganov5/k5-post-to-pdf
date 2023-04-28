@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: WP Article to PDF with Polylang Support and Shortcode
+ * Plugin Name: WP Post to PDF
  * Plugin URI: https://kalaganov5.com
- * Description: A simple plugin to download WordPress articles as PDF files with support for the Russian language, Polylang, and shortcode.
+ * Description: Use shortcode `[pdf_download]`. A simple plugin to download WordPress articles as PDF files with support for the Russian language, Polylang, and shortcode.
  * Version: 1.0
  * Author: Vladimir Kalaganov
  * Author URI: https://kalaganov5.com
@@ -121,7 +121,17 @@ function k5_article_to_pdf_shortcode()
 {
     $pdf_link = add_query_arg('pdf', '1', get_permalink());
 
-    return '<a href="' . esc_url($pdf_link) . '"class="button button--arrow">' . __('Скачать в PDF') . '</a>';
+    return '<a href="' . esc_url($pdf_link) . '"class="button button--arrow">' . __(
+            'Download the article',
+            'k5-post-to-pdf'
+        ) . '</a>';
 }
 
 add_shortcode('pdf_download', 'k5_article_to_pdf_shortcode');
+
+function k5_post_to_pdf_plugin_load_textdomain()
+{
+    load_plugin_textdomain('k5-post-to-pdf', false, dirname(plugin_basename(__FILE__)) . '/languages');
+}
+
+add_action('plugins_loaded', 'k5_post_to_pdf_plugin_load_textdomain');

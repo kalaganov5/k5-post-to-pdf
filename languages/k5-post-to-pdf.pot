@@ -1,22 +1,36 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Copyright (C) 2023 Vladimir Kalaganov
+# This file is distributed under the GPL2.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-28 21:55+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Project-Id-Version: WP Post to PDF 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/k5-post-to-pdf\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-04-28T19:44:19+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: k5-post-to-pdf\n"
+
+#. Plugin Name of the plugin
+msgid "WP Post to PDF"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://kalaganov5.com"
+msgstr ""
+
+#. Description of the plugin
+msgid "Use shortcode `[pdf_download]`. A simple plugin to download WordPress articles as PDF files with support for the Russian language, Polylang, and shortcode."
+msgstr ""
+
+#. Author of the plugin
+msgid "Vladimir Kalaganov"
+msgstr ""
 
 #: k5-post-to-pdf.php:124
-msgid "Скачать в PDF"
+msgid "Download the article"
 msgstr ""
