@@ -1,0 +1,3 @@
+=== WP Article to PDF with Polylang Support and Shortcode ===
+
+== Archived Changelog Entries ==

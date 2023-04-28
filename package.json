@@ -1,0 +1,17 @@
+{
+  "name": "k5-post-to-pdf",
+  "version": "1.0.0",
+  "description": "My WordPress plugin",
+  "scripts": {
+    "build": "dir-archiver --src . --dest ../k5-post-to-pdf.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist sass style.css.map yarn.lock",
+    "watch": "webpack --watch"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel-loader": "^8.2.3",
+    "dir-archiver": "^2.1.0",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.1"
+  }
+}
